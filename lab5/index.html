@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Volunteer Form</h1>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+      <fieldset>
+        <legend>My Infor</legend>
+        <div><label>first name: <input size="100" type="text" name="first_name_field"></label></div>
+        <div><label>last name: <input size="100" type="text" name="last_name_field"></label></div>
+        <div><label>last name: <input size="100" type="text" name="last_name_field"></label></div>
+        <div><label>phone: <input size="100" type="text" name="phone_field"></label></div>
+        <div><label>Email: <input size="100" type="email" name="email_field"></label></div>
+        <div>Gender:</div>
+        <div>
+          <label>Male <input type="radio" name="gender_field" value="male"></label>
+          <label>Female <input type="radio" name="gender_field" value="female"></label>
+        </div>
+        <div>Age:</div>
+        <select name="age_field">
+          <option>under 18</option>
+          <option>over 18</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>My Availability</legend>
+        <label for="available_field"><h2>Days Available:</h2></label>
+        <input type="checkbox" id="available_field" name="available_field[]" value="sunday">Sunday
+        <input type="checkbox" id="available_field" name="available_field[]" value="monday">Monday
+        <input type="checkbox" id="available_field" name="available_field[]" value="tuesday">Tuesday
+        <input type="checkbox" id="available_field" name="available_field[]" value="wednesday">Wednesday
+        <input type="checkbox" id="available_field" name="available_field[]" value="thursday">Thursday
+        <input type="checkbox" id="available_field" name="available_field[]" value="friday">Friday
+        <input type="checkbox" id="available_field" name="available_field[]" value="saturday">Saturday
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </fieldset>
+      <input type="hidden" name="hidden_field" value="Chris Everhart">
+      <button type="submit">Submit Query</button>
+    </form>
+</body>
+</html>
