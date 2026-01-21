@@ -26,16 +26,18 @@
       </fieldset>
       <fieldset>
         <legend>My Availability</legend>
-        <label for="available_field"><h2>Days Available:</h2></label>
-        <input type="checkbox" id="available_field" name="available_field[]" value="sunday">Sunday
-        <input type="checkbox" id="available_field" name="available_field[]" value="monday">Monday
-        <input type="checkbox" id="available_field" name="available_field[]" value="tuesday">Tuesday
-        <input type="checkbox" id="available_field" name="available_field[]" value="wednesday">Wednesday
-        <input type="checkbox" id="available_field" name="available_field[]" value="thursday">Thursday
-        <input type="checkbox" id="available_field" name="available_field[]" value="friday">Friday
-        <input type="checkbox" id="available_field" name="available_field[]" value="saturday">Saturday
-        <h3>Comments</h3>
-        <textarea name="comments_field"></textarea>
+        <label for="available_field"><h3>Days Available:</h3></label>
+        <div>
+          <div><label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label></div>
+          <div><label>Monday <input type="checkbox" name="available_field[]" value="monday"></label></div>
+          <div><label>Tuesday <input type="checkbox" name="available_field[]" value="tuesday"></label></div>
+          <div><label>Wednesday <input type="checkbox" name="available_field[]" value="wednesday"></label></div>
+          <div><label>Thursday <input type="checkbox" name="available_field[]" value="thursday"></label></div>
+          <div><label>Friday <input type="checkbox" name="available_field[]" value="friday"></label></div>
+          <div><label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label></div>
+          <h3>Comments</h3>
+          <textarea name="comments_field"></textarea>
+        </div>
       </fieldset>
       <input type="hidden" name="hidden_field" value="Chris Everhart">
       <button type="submit">Submit Query</button>
