@@ -13,36 +13,53 @@
 }
 
 body {
-  font-family: "Disco", sans-serif;
   background-color: #000;
+  background-image: url("../images/beautiful-shining-stars-night-sky.jpg");
   color: #eee;
-}
-table {
-  width: 100%;
+  font-family: "Disco", sans-serif;
 }
 
 th {
   font-family: "Virgo", sans-serif;
-  border: 1px solid #ccc;
   padding: 0.5rem;
 }
 
 td {
-  border: 1px solid #ccc;
   padding: 0.5rem;
 }
 
-#container {
-  width: 80%;
+td img {
+  display: block;
+  align-content: center;
   margin: auto;
+}
+
+#container {
   background-color: #111;
-  padding: 1rem;
-  box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 20px #ffffff;
+  border-radius: .5em;
+  margin: auto;
+  width: 80%;
+}
+
+#container table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-width: 0px;
 }
 
 #planets {
   width: 100%;
   border-collapse: collapse;
+}
+
+#table-name {
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: "Virgo", sans-serif;
+  font-size: 2.5em;
+  color: #fff;
 }
 
 .mars-primarybg {
@@ -55,11 +72,11 @@ td {
 }
 
 .jupiter-primarybg {  
-  background-color: #C68642;  
+  background-color: #C68642; 
 }
 
 .jupiter-secondarybg { 
-  background-color: #EAD7C3;  
+  background-color: #EAD7C3; 
   color: #000
 }
 
@@ -85,4 +102,8 @@ td {
   bottom: .5em;
   font-size: .7em;
   position: relative;
+}
+
+.hidden {
+  display: none;
 }
