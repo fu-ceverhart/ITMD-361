@@ -1,9 +1,88 @@
-td, th {
+@font-face {
+  font-family: "Virgo";
+  src: url("virgo-01/virgo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Disco";
+  src: url("disco-01/disco.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Disco", sans-serif;
+  background-color: #000;
+  color: #eee;
+}
+table {
+  width: 100%;
+}
+
+th {
+  font-family: "Virgo", sans-serif;
   border: 1px solid #ccc;
   padding: 0.5rem;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+  background-color: #111;
+  padding: 1rem;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 #planets {
   width: 100%;
   border-collapse: collapse;
+}
+
+.mars-primarybg {
+  background-color: #B22222;
+}
+
+.mars-secondarybg {  
+  background-color: #E6B0AA;
+  color: #000
+}
+
+.jupiter-primarybg {  
+  background-color: #C68642;  
+}
+
+.jupiter-secondarybg { 
+  background-color: #EAD7C3;  
+  color: #000
+}
+
+.venus-primarybg {  
+  background-color: #D4AF37;
+}
+
+.venus-secondarybg { 
+  background-color: #F7E7B4;
+  color: #000
+}
+
+.neptune-primarybg {  
+  background-color: #1F4E79;
+}
+
+.neptune-secondarybg {
+  background-color: #D6EAF8;
+  color: #000
+}
+
+.super{
+  bottom: .5em;
+  font-size: .7em;
+  position: relative;
 }

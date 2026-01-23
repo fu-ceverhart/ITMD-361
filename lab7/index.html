@@ -2,74 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Your Title Here</title>
+  <title>Practice Peer-graded Assignment: Lab 7: Style an HTML Table</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Planetary Fact Sheet</h1>
-  <table id="planets">
-    <tr>
-      <th></th>
-      <th>Mars</th>
-      <th>Jupiter</th>
-      <th>Venus</th>
-      <th>Neptune</th>
-    </tr>
-    <tr>
-      <td>Images of ??</td>
-      <td><img src="images/mars.jpg" alt="A photograph from NASA of Mars"></td>
-      <td><img src="images/jupiter.jpg" alt="A photograph from NASA of Jupiter"></td>
-      <td><img src="images/venus.jpg" alt="A photograph from NASA of Venus"></td>
-      <td><img src="images/neptune.jpg" alt="A photograph from NASA of Neptune"></td>
-    </tr>
-    <tr>
-      <td>Mass:</td>
-      <td>6.39 * 10²³ kg</td>
-      <td>1.898 * 10²⁷ kg</td>
-      <td>4.867 * 10²⁴ kg</td>
-      <td>1.024 * 10²⁶ kg</td>
-    </tr>
-    <tr>
-      <td>Diameter</td>
-      <td>6.779 * 10³ km</td>
-      <td>1.398 * 10⁵ km</td>
-      <td>1.210 * 10⁴ km</td>
-      <td>4.924 * 10⁴ km</td>
-    </tr>
-    <tr>
-      <td>Distance from Sun:</td>
-      <td>227.9 million km</td>
-      <td>778.5 million km</td>
-      <td>108.2 million km</td>
-      <td>4.5 billion km</td>
-    </tr>
-    <tr>
-      <td>Surface Gravity (m/s²)</td>
-      <td>3.71 m/s²</td>
-      <td>24.79 m/s²</td>
-      <td>8.87 m/s²</td>
-      <td>11.15 m/s²</td>
-    </tr>
-    <tr>
-      <td>Orbital Period (length of year)</td>
-      <td>687 Earth Days</td>
-      <td>11.86 Earth Years</td>
-      <td>224.7 Earth Days</td>
-      <td>164.8 Earth Years</td>
-    </tr>
-    <tr>
-      <td>Number of Known Moons</td>
-      <td>2</td>
-      <td>95</td>
-      <td>0</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <td>Other fact:</td>
-      <td>Has the largest volcano in the solar system (Olympus Mons)</td>
-      <td>Strongest magnetic field of any planet</td>
-      <td>Rotates backward compared to most planets</td>
-      <td>Fastest winds in the solar system (over 2,000 km/h)</td>
-    </tr>
-  </table>
+  <div id="container">
+    <table id="planets">
+      <tr>
+        <th></th>
+        <th>Mars</th>
+        <th>Jupiter</th>
+        <th>Venus</th>
+        <th>Neptune</th>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td><img src="images/mars.jpg" alt="A photograph from NASA of Mars"></td>
+        <td><img src="images/jupiter.jpg" alt="A photograph from NASA of Jupiter"></td>
+        <td><img src="images/venus.jpg" alt="A photograph from NASA of Venus"></td>
+        <td><img src="images/neptune.jpg" alt="A photograph from NASA of Neptune"></td>
+      </tr>
+      <tr>
+        <td>Mass:</td>
+        <td class="mars-color mars-primarybg">6.39 * 10<span class="super">23</span> kg</td>
+        <td class="jupiter-color jupiter-primarybg">1.898 * 10<span class="super">27</span> kg</td>
+        <td class="venus-color venus-primarybg">4.867 * 10<span class="super">24</span> kg</td>
+        <td class="neptune-color neptune-primarybg">1.024 * 10<span class="super">26</span> kg</td>
+      </tr>
+      <tr>
+        <td>Diameter</td>
+        <td class="mars-color mars-secondarybg">6.779 * 10<span class="super">3</span> km</td>
+        <td class="jupiter-color jupiter-secondarybg">1.398 * 10<span class="super">5</span> km</td>
+        <td class="venus-color venus-secondarybg">1.210 * 10<span class="super">4</span> km</td>
+        <td class="neptune-color neptune-secondarybg">4.924 * 10<span class="super">4</span> km</td>
+      </tr>
+      <tr>
+        <td>Distance from Sun:</td>
+        <td class="mars-color mars-primarybg">227.9 million km</td>
+        <td class="jupiter-color jupiter-primarybg">778.5 million km</td>
+        <td class="venus-color venus-primarybg">108.2 million km</td>
+        <td class="neptune-color neptune-primarybg">4.5 billion km</td>
+      </tr>
+      <tr>
+        <td>Surface Gravity (m/s<span class="super">2</span>)</td>
+        <td class="mars-color mars-secondarybg">3.71 m/s²</td>
+        <td class="jupiter-color jupiter-secondarybg">24.79 m/s²</td>
+        <td class="venus-color venus-secondarybg">8.87 m/s²</td>
+        <td class="neptune-color neptune-secondarybg">11.15 m/s²</td>
+      </tr>
+      <tr>
+        <td>Orbital Period (length of year)</td>
+        <td class="mars-color mars-primarybg">687 Earth Days</td>
+        <td class="jupiter-color jupiter-primarybg">11.86 Earth Years</td>
+        <td class="venus-color venus-primarybg">224.7 Earth Days</td>
+        <td class="neptune-color neptune-primarybg">164.8 Earth Years</td>
+      </tr>
+      <tr>
+        <td>Number of Known Moons</td>
+        <td class="mars-color mars-secondarybg">2</td>
+        <td class="jupiter-color jupiter-secondarybg">95</td>
+        <td class="venus-color venus-secondarybg">0</td>
+        <td class="neptune-color neptune-secondarybg">14</td>
+      </tr>
+      <tr>
+        <td>Other fact:</td>
+        <td class="mars-color mars-primarybg">Has the largest volcano in the solar system (Olympus Mons)</td>
+        <td class="jupiter-color jupiter-primarybg">Strongest magnetic field of any planet</td>
+        <td class="venus-color venus-primarybg">Rotates backward compared to most planets</td>
+        <td class="neptune-color neptune-primarybg">Fastest winds in the solar system (over 2,000 km/h)</td>
+      </tr>
+    </table>
+  </div>
 </body>
